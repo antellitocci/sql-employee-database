@@ -1,4 +1,4 @@
-INSERT INTO departments (name)
+INSERT INTO departments (name, dept_description)
 VALUES
     ('Human Resources', 'Oversees and manages employee benefits as well as handles employee complaints.'),
     ('Technology', 'Responsible for maintaining technology stack used by the company.'),
@@ -8,14 +8,14 @@ VALUES
 
 INSERT INTO roles (title, salary, department_id)
 VALUES 
-    ('Chief Human', 150000, 0),
-    ('Lead Developer', 80000, 1),
-    ('Developer', 125000, 1)
-    ('Janitor', 45000, 2),
-    ('Handyman', 32500, 2),
-    ('Attorney', 250000, 3),
-    ('Sales Leader', 100000, 4)
-    ('Account Manager', 75000, 4);
+    ('Chief Human', 150000, 1),
+    ('Lead Developer', 80000, 2),
+    ('Developer', 125000, 2),
+    ('Janitor', 45000, 3),
+    ('Handyman', 32500, 3),
+    ('Attorney', 250000, 4),
+    ('Sales Leader', 100000, 5),
+    ('Account Manager', 75000, 5);
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES

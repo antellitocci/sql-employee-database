@@ -10,7 +10,24 @@ const viewAllDepartments = require('./logic/views');
 // // add a role
 // // add an employee
 // // update an employee role
-
+inquirer.prompt([
+    {
+        type: 'list',
+        name: 'actionSelect',
+        message: 'What would you like to do?',
+        choices: ['View All Departments']
+    }
+])
+.then((answer) => {
+    if(actionSelect[0]){
+        viewAllDepartments();
+    }
+})
+.catch((error) => {
+    if(error){
+        console.log(error);
+    }
+});
 
 
 //add a department
