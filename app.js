@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const viewAllDepartments = require('./logic/views');
 
 //inquirer questions
 //what would you like to do?
@@ -9,6 +10,8 @@ const inquirer = require('inquirer');
 // // add a role
 // // add an employee
 // // update an employee role
+
+
 
 //add a department
 // // enter name of department
@@ -27,3 +30,5 @@ const inquirer = require('inquirer');
 //update an employee role
 // // select employee to update
 // // indicate new role
+
+//exit application????

@@ -9,7 +9,7 @@ VALUES
 INSERT INTO roles (title, salary, department_id)
 VALUES 
     ('Chief Human', 150000, 0),
-    ('IT Specialist', 80000, 1),
+    ('Lead Developer', 80000, 1),
     ('Developer', 125000, 1)
     ('Janitor', 45000, 2),
     ('Handyman', 32500, 2),
@@ -21,7 +21,7 @@ INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
     ('Nick', 'Nolan', 1, null),
     ('Ronald', 'McDonald', 2, null),
-    ('Kendra', 'Berger', 2, null),
+    ('Kendra', 'Berger', 3, null),
     ('Brent', 'Leon', 3, null),
     ('Jennie', 'Myers', 3, null),
     ('Hilda', 'Gill', 4, null),
